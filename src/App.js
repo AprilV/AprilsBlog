@@ -19,7 +19,7 @@ function App() {
         left: "0"
       }}>
         <Link to="/" style={{ margin: "0 15px", textDecoration: "none", color: "#007bff", fontWeight: "bold" }}>Home</Link>
-        <Link to="/blog" style={{ margin: "0 15px", textDecoration: "none", color: "#007bff", fontWeight: "bold" }}>Blog</Link>
+        <Link to="/blog" style={{ margin: "0 15px", textDecoration: "none", color: "#007bff", fontWeight: "bold" }}>AI Research Paper</Link>
         <Link to="/3d" style={{ margin: "0 15px", textDecoration: "none", color: "#007bff", fontWeight: "bold" }}>3D App</Link>
       </nav>
 
