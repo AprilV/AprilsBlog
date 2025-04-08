@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
     <title>Redirecting…</title>
     <script type="text/javascript">
-      var pathname = window.location.pathname;
-      var search = window.location.search;
-      var hash = window.location.hash;
+      (function () {
+        var currentPath = window.location.pathname;
+        var redirectRoot = "/AprilsBlog";
+        
+        // Only redirect if we're not already at the correct root
+        if (!currentPath.startsWith(redirectRoot)) {
+          var fullRedirect =
+            redirectRoot +
+            currentPath.replace(/\/+$/, "") + // remove trailing slash
+            window.location.search +
+            window.location.hash;
 
-      // Only redirect if not already inside /AprilsBlog
-      if (!pathname.startsWith("/AprilsBlog")) {
-        var newUrl = "/AprilsBlog" + pathname + search + hash;
-        window.location.replace(newUrl);
-      }
+          // Prevent double appending if already partially redirected
+          if (!window.location.pathname.includes(redirectRoot + redirectRoot)) {
+            window.location.replace(fullRedirect);
+          }
+        }
+      })();
     </script>
   </head>
   <body>
