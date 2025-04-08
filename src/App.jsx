@@ -18,7 +18,7 @@ function App() {
         </div>
       </nav>
 
-      <div style={{ marginTop: "80px", padding: "20px" }}>
+      <div style={{ marginTop: "100px", padding: "20px" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
