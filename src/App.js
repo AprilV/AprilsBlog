@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import ThreeD from "./pages/ThreeD";
-import WebDev from "./pages/WebDev"; // ✅ Import WebDev
+import WebDev from "./pages/WebDev";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/AprilsBlog"> {/* ✅ Set basename for GitHub Pages */}
       <nav style={{
         padding: "15px",
         fontSize: "18px",
@@ -30,7 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/3d" element={<ThreeD />} />
-          <Route path="/Web-Dev" element={<WebDev />} /> {/* ✅ Add route for WebDev */}
+          <Route path="/Web-Dev" element={<WebDev />} />
         </Routes>
       </div>
     </Router>
