@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/AprilsBlog/" />
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <script type="text/javascript">
+      // Get the full URL path and redirect to your app entry point
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      var fullPath = "/AprilsBlog" + path + search + hash;
+      window.location.replace(fullPath);
+    </script>
   </head>
-  <body></body>
+  <body>
+    Redirecting…
+  </body>
 </html>
