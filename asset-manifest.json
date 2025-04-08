@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AprilsBlog/static/css/main.ffbbeed4.css",
-    "main.js": "/AprilsBlog/static/js/main.33dca1d5.js",
+    "main.css": "/AprilsBlog/static/css/main.63245b50.css",
+    "main.js": "/AprilsBlog/static/js/main.39b4f3f3.js",
     "index.html": "/AprilsBlog/index.html",
-    "main.ffbbeed4.css.map": "/AprilsBlog/static/css/main.ffbbeed4.css.map",
-    "main.33dca1d5.js.map": "/AprilsBlog/static/js/main.33dca1d5.js.map"
+    "main.63245b50.css.map": "/AprilsBlog/static/css/main.63245b50.css.map",
+    "main.39b4f3f3.js.map": "/AprilsBlog/static/js/main.39b4f3f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffbbeed4.css",
-    "static/js/main.33dca1d5.js"
+    "static/css/main.63245b50.css",
+    "static/js/main.39b4f3f3.js"
   ]
 }
