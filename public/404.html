@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>Redirecting…</title>
     <script type="text/javascript">
-      // Get the full URL path and redirect to your app entry point
-      var path = window.location.pathname;
+      var pathname = window.location.pathname;
       var search = window.location.search;
       var hash = window.location.hash;
-      var fullPath = "/AprilsBlog" + path + search + hash;
-      window.location.replace(fullPath);
+
+      // Only redirect if not already inside /AprilsBlog
+      if (!pathname.startsWith("/AprilsBlog")) {
+        var newUrl = "/AprilsBlog" + pathname + search + hash;
+        window.location.replace(newUrl);
+      }
     </script>
   </head>
   <body>
