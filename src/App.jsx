@@ -6,6 +6,8 @@ import ThreeD from "./pages/ThreeD";
 import WebDev from "./pages/WebDev";
 import "./Navbar.css"; // ✅ Import the new CSS file
 
+
+
 function App() {
   return (
     <Router>
