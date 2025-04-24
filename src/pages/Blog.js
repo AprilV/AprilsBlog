@@ -121,7 +121,7 @@ export default function Blog() {
         <p>
           Next week, I’ll go through all my gathered sources and finalize which
           ones make it into the draft. I’ll begin reading and annotating key
-          materials and start writing sections of the paper based on my outline.
+          materials and start forming thoughts about writing sections of the paper based on my outline.
           This process should carry me through Week 5 and into the drafting
           phase without delays.
         </p>
