@@ -5,6 +5,64 @@ import "../Blog.css";
 export default function Blog() {
   return (
     <div className="blog-container">
+
+    {/* Week 4 Post */}
+<div className="blog-entry">
+  <h1>Week 4: Visualizing AI and Making Connections</h1>
+  <p>
+    <strong>Date:</strong> May 1, 2025
+  </p>
+
+  <p>
+    This week I created a mind map to organize everything I’ve researched so far. I already had an outline, but building the mind map gave me a different perspective. Visually mapping the pieces helped me see the relationships between technical development, real-world use, ethical concerns, and regulation in a way that a list of bullet points doesn’t. It also helped me track what connects and where my strongest evidence sits. I didn’t expect the environmental impact of AI to tie so directly into policy concerns, but it showed up across multiple categories. That connection was something I hadn’t clearly seen before.
+  </p>
+
+  <p>
+    <strong>Here’s the mind map I created:</strong><br />
+    <a
+      href="https://atlas.mindmup.com/2025/05/9d69bb4026df11f0a04e9b9ed19cec8c/ai_from_science_fiction_to_reality/index.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View My Mind Map
+    </a>
+  </p>
+
+  <p>
+    Looking back at my Week 3 plan, I said I needed to solidify the structure of my paper and make better use of the sources I’ve collected. I’ve done that — the map now mirrors the major sections in my outline, and I’m tagging which sources go where. So yes, I’m where I planned to be.
+  </p>
+
+  <p>
+    One issue I hit was deciding which sources to keep. I had a lot of technical articles that overlapped, and a few were either too corporate or too vague. I decided to prioritize sources that offer both detail and context. For example, <em>The Coming Wave</em> is still one of the most useful sources because it ties ethical risks to real-world decisions. On the other hand, the Google AI blog was informative, but too focused on their own models — it’s useful for technical insight but limited in broader context. I’m using it carefully.
+  </p>
+
+  <p>
+    This week I also finished reviewing the Stanford HAI report and added the McKinsey explainer to cover real-world adoption of generative AI. I didn’t expect to find myself so interested in policy, but after reading more on containment, it’s clear that regulation is one of the most urgent pieces of this story.
+  </p>
+
+  <p>
+    Next week I plan to start drafting the first full section of my paper. The mind map will act like a blueprint. I’ll continue tagging my sources by topic and look for one more academic article to back up the historical section. I also want to do a deeper dive into bias and fairness in AI — that’s one area that’s still underdeveloped in my research.
+  </p>
+
+  <h3>Sources Used:</h3>
+  <ol>
+    <li>
+      Suleyman, M., &amp; Bhaskar, M. (2023). <em>The Coming Wave: Technology, Power, and the Twenty-First Century’s Greatest Dilemma</em>. Crown.
+    </li>
+    <li>
+      Brynjolfsson, E., &amp; McElheran, K. (2023). <em>Generative AI: A McKinsey Explainer</em>. McKinsey &amp; Company.
+    </li>
+    <li>
+      Google. (2023). <em>Gemini, LaMDA, and Prompt Tuning</em>. Google AI Blog.
+    </li>
+    <li>
+      Bommasani, R. (2022). <em>NLP’s ImageNet Moment Has Arrived</em>. The Gradient.
+    </li>
+    <li>
+      Stanford HAI. (2023). <em>Generative AI: Perspectives from Stanford</em>. Stanford Human-Centered Artificial Intelligence.
+    </li>
+  </ol>
+</div>
     
       {/* Week 3 Post */}
       <div className="blog-entry">
@@ -126,6 +184,8 @@ export default function Blog() {
           phase without delays.
         </p>
       </div>
+
+      
 
       {/* Week 2 Post */}
       <div className="blog-entry">
