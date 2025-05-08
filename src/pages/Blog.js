@@ -1,10 +1,127 @@
 import React from "react";
 import googleBadge from "../images/googlebadge.webp";
 import "../Blog.css";
+import commonImage from "../images/CommonStandard/common.jpg";
+import standardImage from "../images/CommonStandard/standard.jpg";
+import '../Blog.css';
+
+
+
 
 export default function Blog() {
   return (
     <div className="blog-container">
+
+    {/* Week 5 Post */}
+<div className="blog-entry">
+  <h1>Week 5: Midpoint Check-In and Reflection</h1>
+  <p><strong>Date:</strong> May 8, 2025</p>
+
+  <p>
+    According to the plan I set back in Week 3, I expected to have my reading done,
+    sources finalized, and the first few sections of my draft underway by now. I’m not
+    there yet. I’ve had to spend extra time this week replacing sources that either
+    turned out to be incomplete, no longer credible, or unavailable. One of the key
+    articles I planned to use, the MIT piece on science fiction and AI, disappeared, so
+    I’m heading back to the library to find a suitable replacement.
+  </p>
+
+  <p>
+    This week, I focused on evaluating what I had, identifying what still works, and
+    removing anything that didn’t meet academic standards. I confirmed the licenses and
+    citations for my two project images, one from Wikimedia Commons and one from iStock.
+    I didn’t get as far on drafting as I hoped because I was also working on a coding
+    project for another class, but I made progress in cleaning up my research base.
+    I may need to scale back parts of my outline if I can’t stay within the scope of the
+    assignment.
+  </p>
+
+  <p>
+    Next week, I’ll go to the library to find replacement sources, finish my reading, and
+    start writing the “History of AI” section. I’ll also make sure to double-check
+    citations while I draft so I don’t miss anything or end up paraphrasing without
+    attribution.
+  </p>
+
+  <h2>How My Sources Relate and Fill Gaps</h2>
+  <p>
+    So far, my sources haven’t directly contradicted each other, but they offer very
+    different perspectives on the future of AI. Some are optimistic, others are
+    alarmist. There’s disagreement about whether AI will destroy jobs, save industries,
+    or threaten humanity. I find the extreme views more hypothetical than realistic.
+    Most of it sounds like fear based on a poor understanding of what AI actually is.
+    I’ve been more focused on identifying credible, well-supported material. For example,
+    <em> The Coming Wave </em> is helping me understand political and economic risks.
+    The OC seminar provided insight into environmental costs, something none of my
+    earlier sources covered.
+  </p>
+
+  <h2>Ethical Guidelines and Publishing Reflection</h2>
+  <p>
+    I reviewed the author guidelines for the <em>Information Systems Journal</em>.
+    The ethical rules didn’t surprise me, but I did find it interesting how they
+    addressed AI tools. In past classes, there was no discussion about ChatGPT or AI
+    editing, but this journal requires authors to disclose any use of tools like that
+    in the methods or acknowledgments section. I agree with that. If a tool helps you
+    write, you should say so. I also saw that they expect you to assign copyright to
+    the journal unless you go the Open Access route. I’d prefer to keep control of my
+    work, but I might consider signing over the rights if the compensation or reach
+    made sense.
+  </p>
+
+  <p>
+    Other publishing options include paying to publish Open Access using a Creative
+    Commons license or posting a preprint on a site like arXiv before formal submission.
+  </p>
+
+  <h2>Plagiarism and Citation</h2>
+  <p>
+    Plagiarism is a problem on campuses, mostly because students aren’t always sure how
+    to cite properly. I feel more confident now, but I still double-check myself,
+    especially since inline citations are new to me. I’ve only used APA format, and it
+    makes sense to me, but the number of rules can still be confusing. I use
+    <em> The Information Literacy User’s Guide </em> and Scribbr to make sure my
+    references and in-text citations are correct. This week, I realized citations are
+    more complex than I thought, especially when I’m writing from memory and need to stop
+    and ask myself whether a sentence is paraphrased or my own thought.
+  </p>
+
+  <h2>Something New I Learned</h2>
+  <p>
+    What stood out to me this week is how easily I can confuse my own voice with
+    someone else’s when paraphrasing. Even if I rewrite something in my own words,
+    it might still come from a source and need a citation. That’s something I’ll be
+    watching closely as I begin writing the actual draft.
+  </p>
+
+  <h2>Selected Images and Citations</h2>
+
+  <h3>Image 1 – Creative Commons Licensed</h3>
+  <img
+    src={commonImage}
+    alt="Creative Commons AI Image"
+    className="blog-image"
+  />
+  <p>
+    mikemacmarketing. (2018, October 5). <em>Artificial Intelligence & AI & Machine Learning</em> [Image]. Wikimedia Commons.
+    <br />
+    <strong>License:</strong> Creative Commons Attribution 2.0 (CC BY 2.0)
+  </p>
+
+  <h3>Image 2 – Standard Licensed</h3>
+  <img
+    src={standardImage}
+    alt="Standard Licensed AI Image"
+    className="blog-image"
+  />
+  <p>
+    Just_Super. (2024, February 12). <em>AI artificial intelligence Security sentinel password cyber security</em>. iStock.
+    <br />
+    <strong>License:</strong> iStock Standard License (educational and commercial use with attribution)
+  </p>
+</div>
+
+
       {/* Week 4 Post */}
       <div className="blog-entry">
         <h1>Week 4: Visualizing AI and Making Connections</h1>
@@ -40,21 +157,55 @@ export default function Blog() {
         <p>
           Looking back at my Week 3 plan, I said I needed to solidify the
           structure of my paper and make better use of the sources I’ve
-          collected. I’ve done that, the map now mirrors the major sections in
+          collected. I’ve done that. The map now mirrors the major sections in
           my outline, and I’m tagging which sources go where. So yes, I’m where
           I planned to be.
         </p>
 
         <p>
-          One issue I hit was deciding which sources to keep. I had a lot of
-          technical articles that overlapped, and a few were either too
-          corporate or too vague. I decided to prioritize sources that offer
-          both detail and context. For example, <em>The Coming Wave</em> is
-          still one of the most useful sources because it ties ethical risks to
-          real-world decisions. On the other hand, the Google AI blog was
-          informative, but too focused on their own models, it’s useful for
-          technical insight but limited in broader context. I’m using it
-          carefully.
+          I used a mix of news articles, corporate blogs, expert blogs, industry
+          reports, academic papers, and books. Each had strengths and limits.
+          News articles helped track current events but lacked depth. Corporate
+          blogs like Google’s were technically useful but biased toward
+          promoting their tools. Expert blogs like The Gradient offered context
+          and analysis that helped frame key ideas. Industry reports like
+          McKinsey’s explained adoption and business impact clearly. Scholarly
+          reports from Stanford added credibility and evidence. The book by
+          Suleyman was the most useful for thinking about the future and ethics.
+        </p>
+
+        <p>
+          Three areas in my research are still incomplete. One is bias and
+          fairness in AI. I have not found a solid academic source that covers
+          this in enough detail. Another is the economic impact of AI on rural
+          areas and low-income communities. A third is how regulation differs
+          across countries. These are either underreported or too time-consuming
+          to explore right now.
+        </p>
+
+        <p>
+          To know when I had enough sources, I used the outline as a checklist.
+          I looked for at least one strong, credible source per section. If a
+          source repeated ideas from another or added little value, I dropped
+          it. I also watched for overlap across sources. Once multiple sources
+          supported the same idea, I marked that area as covered.
+        </p>
+
+        <p>
+          For future projects, my selection criteria will be: relevance to the
+          research question, date of publication, author credentials, source
+          bias, and the depth of information. I will also ask whether it
+          introduces a new angle or just repeats what I already know.
+        </p>
+
+        <p>
+          One ethical concern that came up was how AI companies frame their own
+          tools. For example, Google’s blog makes their models sound flawless
+          but skips over concerns like energy use or bias. I had to check claims
+          across multiple sources to get the full picture. There’s also a
+          question of how much trust to place in AI-generated content or
+          summaries. I’ve stayed focused on sources written or reviewed by
+          humans.
         </p>
 
         <p>
@@ -70,11 +221,10 @@ export default function Blog() {
           The mind map will act like a blueprint. I’ll continue tagging my
           sources by topic and look for one more academic article to back up the
           historical section. I also want to do a deeper dive into bias and
-          fairness in AI that’s one area that’s still underdeveloped in my
-          research.
+          fairness in AI.
         </p>
 
-        <h3>Sources Used:</h3>
+        <h2>Sources Used:</h2>
         <ol>
           <li>
             Suleyman, M., &amp; Bhaskar, M. (2023).{" "}
@@ -103,7 +253,7 @@ export default function Blog() {
             Human-Centered Artificial Intelligence.
           </li>
         </ol>
-      </div>
+      </div>npm run developed
 
       {/* Week 3 Post */}
       <div className="blog-entry">

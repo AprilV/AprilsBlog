@@ -23,4 +23,12 @@
     line-height: 1.6;
     color: #444;
   }
+  .blog-image {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+  }
+  
   
