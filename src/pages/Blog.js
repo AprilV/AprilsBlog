@@ -3,125 +3,275 @@ import googleBadge from "../images/googlebadge.webp";
 import "../Blog.css";
 import commonImage from "../images/CommonStandard/common.jpg";
 import standardImage from "../images/CommonStandard/standard.jpg";
-import '../Blog.css';
-
-
-
+import "../Blog.css";
 
 export default function Blog() {
   return (
     <div className="blog-container">
+      {/* Week 6 Post */}
+      <div className="blog-entry">
+        <h1>Week 6: Realigning the Plan</h1>
+        <p>
+          <strong>Date:</strong> May 15, 2025
+        </p>
 
-    {/* Week 5 Post */}
-<div className="blog-entry">
-  <h1>Week 5: Midpoint Check-In and Reflection</h1>
-  <p><strong>Date:</strong> May 8, 2025</p>
+        <p>
+          This week’s journal entry includes a briefing memo that summarizes my
+          research progress so far. I’m behind on the original timeline but not
+          off track. I’ve completed the Introduction and History sections. I
+          expected to be working on the Technical Specifics section by now, but
+          other responsibilities pulled me away from the project more than I
+          planned. I’ve still made good use of the time I did have.
+        </p>
 
-  <p>
-    According to the plan I set back in Week 3, I expected to have my reading done,
-    sources finalized, and the first few sections of my draft underway by now. I’m not
-    there yet. I’ve had to spend extra time this week replacing sources that either
-    turned out to be incomplete, no longer credible, or unavailable. One of the key
-    articles I planned to use, the MIT piece on science fiction and AI, disappeared, so
-    I’m heading back to the library to find a suitable replacement.
-  </p>
+        <p>
+          I focused on organizing source material, refining the literature
+          matrix, and identifying where I need stronger support in the Technical
+          Specifics section. I’ve also started planning for the final
+          presentation and decided to use Prezi. It’s a better fit for the way I
+          want to walk through AI’s evolution visually, especially since I’ll be
+          showing how it moved from science fiction to real-world
+          infrastructure.
+        </p>
 
-  <p>
-    This week, I focused on evaluating what I had, identifying what still works, and
-    removing anything that didn’t meet academic standards. I confirmed the licenses and
-    citations for my two project images, one from Wikimedia Commons and one from iStock.
-    I didn’t get as far on drafting as I hoped because I was also working on a coding
-    project for another class, but I made progress in cleaning up my research base.
-    I may need to scale back parts of my outline if I can’t stay within the scope of the
-    assignment.
-  </p>
+        <p>
+          Next week is about regaining momentum. I’ll finish the Technical
+          Specifics section, finalize sources, and outline the next two
+          sections: Concerns and Privacy. I hope to have a full draft by the end
+          of the week.
+        </p>
 
-  <p>
-    Next week, I’ll go to the library to find replacement sources, finish my reading, and
-    start writing the “History of AI” section. I’ll also make sure to double-check
-    citations while I draft so I don’t miss anything or end up paraphrasing without
-    attribution.
-  </p>
+        <h2>MEMORANDUM</h2>
+        <p>
+          <strong>TO:</strong> Amelia Garripoli
+          <br />
+          <strong>FROM:</strong> April Sykes
+          <br />
+          <strong>RE:</strong> Research Summary – The Evolution of Artificial
+          Intelligence
+          <br />
+          <strong>DATE:</strong> May 15, 2025
+        </p>
 
-  <h2>How My Sources Relate and Fill Gaps</h2>
-  <p>
-    So far, my sources haven’t directly contradicted each other, but they offer very
-    different perspectives on the future of AI. Some are optimistic, others are
-    alarmist. There’s disagreement about whether AI will destroy jobs, save industries,
-    or threaten humanity. I find the extreme views more hypothetical than realistic.
-    Most of it sounds like fear based on a poor understanding of what AI actually is.
-    I’ve been more focused on identifying credible, well-supported material. For example,
-    <em> The Coming Wave </em> is helping me understand political and economic risks.
-    The OC seminar provided insight into environmental costs, something none of my
-    earlier sources covered.
-  </p>
+        <h3>Background</h3>
+        <p>
+          Artificial intelligence has shifted from a science fiction concept
+          into real-world technology shaping infrastructure, labor,
+          communication, and national security. This project explores how that
+          shift occurred and what the implications are for society. It traces
+          AI’s evolution from early theories through today’s neural
+          network-driven systems.
+        </p>
 
-  <h2>Ethical Guidelines and Publishing Reflection</h2>
-  <p>
-    I reviewed the author guidelines for the <em>Information Systems Journal</em>.
-    The ethical rules didn’t surprise me, but I did find it interesting how they
-    addressed AI tools. In past classes, there was no discussion about ChatGPT or AI
-    editing, but this journal requires authors to disclose any use of tools like that
-    in the methods or acknowledgments section. I agree with that. If a tool helps you
-    write, you should say so. I also saw that they expect you to assign copyright to
-    the journal unless you go the Open Access route. I’d prefer to keep control of my
-    work, but I might consider signing over the rights if the compensation or reach
-    made sense.
-  </p>
+        <h3>Study Methods, Limitations, and Literature Summary</h3>
+        <p>
+          This is a literature-based research project. I am reviewing academic
+          articles, white papers, technical blogs, and books to map AI’s
+          development. I originally planned to be done with the Technical
+          Specifics section this week, but that didn’t happen. I’ve written the
+          Introduction and History sections and adjusted my timeline
+          accordingly.
+        </p>
 
-  <p>
-    Other publishing options include paying to publish Open Access using a Creative
-    Commons license or posting a preprint on a site like arXiv before formal submission.
-  </p>
+        <p>
+          I’m using a minimum of two credible sources per section, with inline
+          APA citations. The audience includes a professor and six junior
+          students in the BASIS program. My tone stays clear and semi-technical,
+          with minimal jargon and full source transparency.
+        </p>
 
-  <h2>Plagiarism and Citation</h2>
-  <p>
-    Plagiarism is a problem on campuses, mostly because students aren’t always sure how
-    to cite properly. I feel more confident now, but I still double-check myself,
-    especially since inline citations are new to me. I’ve only used APA format, and it
-    makes sense to me, but the number of rules can still be confusing. I use
-    <em> The Information Literacy User’s Guide </em> and Scribbr to make sure my
-    references and in-text citations are correct. This week, I realized citations are
-    more complex than I thought, especially when I’m writing from memory and need to stop
-    and ask myself whether a sentence is paraphrased or my own thought.
-  </p>
+        <h3>Summary of Key Sources</h3>
+        <ol>
+          <li>
+            <strong>Bringsjord, S., & Govindarajulu, N. (2022).</strong>{" "}
+            <em>Artificial Intelligence</em> – Stanford Encyclopedia of
+            Philosophy. This source defines AI clearly and provides background
+            on symbolic AI, intelligent agents, and machine learning. It also
+            outlines major milestones from Turing to deep learning.
+          </li>
+          <li>
+            <strong>Suleyman, M. (2023).</strong> <em>The Coming Wave.</em>{" "}
+            Suleyman provides a powerful look at how AI has moved from hype to
+            critical infrastructure. He argues that synthetic biology,
+            autonomous systems, and global inequality are part of a new
+            technological wave humanity is not ready for.
+          </li>
+          <li>
+            <strong>Google AI (2023).</strong>{" "}
+            <em>Machine Learning Crash Course.</em> This resource explains
+            supervised, unsupervised, and deep learning in clear terms. I’m
+            using it to support the Technical Specifics section and explain what
+            LLMs like GPT actually do.
+          </li>
+          <li>
+            <strong>NIH (2023).</strong> <em>Synthetic Biology Overview.</em>{" "}
+            This report outlines how synthetic biology and AI overlap. It will
+            be referenced briefly to show where AI is headed beyond data and
+            language models.
+          </li>
+        </ol>
 
-  <h2>Something New I Learned</h2>
-  <p>
-    What stood out to me this week is how easily I can confuse my own voice with
-    someone else’s when paraphrasing. Even if I rewrite something in my own words,
-    it might still come from a source and need a citation. That’s something I’ll be
-    watching closely as I begin writing the actual draft.
-  </p>
+        <h3>Findings So Far</h3>
+        <ul>
+          <li>
+            AI’s history is shaped by both science fiction and actual computing
+            limits.
+          </li>
+          <li>
+            The shift from symbolic AI to neural networks changed the field
+            completely.
+          </li>
+          <li>
+            Public understanding often lags behind the real capabilities and
+            risks.
+          </li>
+          <li>
+            Real AI tools are already embedded in critical systems across
+            sectors.
+          </li>
+          <li>
+            Oversight is limited, and ethical frameworks are not keeping up with
+            deployment speed.
+          </li>
+        </ul>
 
-  <h2>Selected Images and Citations</h2>
+        <h3>Next Steps</h3>
+        <p>
+          I will complete the Technical Specifics section and get a clean
+          outline in place for Concerns and Privacy. I’m still using the same
+          citation approach and structure from Week 3. I also plan to finalize
+          my choice of a visual element. Prezi will be used for the final
+          presentation. I hope to have a full working draft by the end of next
+          week.
+        </p>
+      </div>
+      {/* Week 5 Post */}
+      <div className="blog-entry">
+        <h1>Week 5: Midpoint Check-In and Reflection</h1>
+        <p>
+          <strong>Date:</strong> May 8, 2025
+        </p>
 
-  <h3>Image 1 – Creative Commons Licensed</h3>
-  <img
-    src={commonImage}
-    alt="Creative Commons AI Image"
-    className="blog-image"
-  />
-  <p>
-    mikemacmarketing. (2018, October 5). <em>Artificial Intelligence & AI & Machine Learning</em> [Image]. Wikimedia Commons.
-    <br />
-    <strong>License:</strong> Creative Commons Attribution 2.0 (CC BY 2.0)
-  </p>
+        <p>
+          According to the plan I set back in Week 3, I expected to have my
+          reading done, sources finalized, and the first few sections of my
+          draft underway by now. I’m not there yet. I’ve had to spend extra time
+          this week replacing sources that either turned out to be incomplete,
+          no longer credible, or unavailable. One of the key articles I planned
+          to use, the MIT piece on science fiction and AI, disappeared, so I’m
+          heading back to the library to find a suitable replacement.
+        </p>
 
-  <h3>Image 2 – Standard Licensed</h3>
-  <img
-    src={standardImage}
-    alt="Standard Licensed AI Image"
-    className="blog-image"
-  />
-  <p>
-    Just_Super. (2024, February 12). <em>AI artificial intelligence Security sentinel password cyber security</em>. iStock.
-    <br />
-    <strong>License:</strong> iStock Standard License (educational and commercial use with attribution)
-  </p>
-</div>
+        <p>
+          This week, I focused on evaluating what I had, identifying what still
+          works, and removing anything that didn’t meet academic standards. I
+          confirmed the licenses and citations for my two project images, one
+          from Wikimedia Commons and one from iStock. I didn’t get as far on
+          drafting as I hoped because I was also working on a coding project for
+          another class, but I made progress in cleaning up my research base. I
+          may need to scale back parts of my outline if I can’t stay within the
+          scope of the assignment.
+        </p>
 
+        <p>
+          Next week, I’ll go to the library to find replacement sources, finish
+          my reading, and start writing the “History of AI” section. I’ll also
+          make sure to double-check citations while I draft so I don’t miss
+          anything or end up paraphrasing without attribution.
+        </p>
 
+        <h2>How My Sources Relate and Fill Gaps</h2>
+        <p>
+          So far, my sources haven’t directly contradicted each other, but they
+          offer very different perspectives on the future of AI. Some are
+          optimistic, others are alarmist. There’s disagreement about whether AI
+          will destroy jobs, save industries, or threaten humanity. I find the
+          extreme views more hypothetical than realistic. Most of it sounds like
+          fear based on a poor understanding of what AI actually is. I’ve been
+          more focused on identifying credible, well-supported material. For
+          example,
+          <em> The Coming Wave </em> is helping me understand political and
+          economic risks. The OC seminar provided insight into environmental
+          costs, something none of my earlier sources covered.
+        </p>
+
+        <h2>Ethical Guidelines and Publishing Reflection</h2>
+        <p>
+          I reviewed the author guidelines for the{" "}
+          <em>Information Systems Journal</em>. The ethical rules didn’t
+          surprise me, but I did find it interesting how they addressed AI
+          tools. In past classes, there was no discussion about ChatGPT or AI
+          editing, but this journal requires authors to disclose any use of
+          tools like that in the methods or acknowledgments section. I agree
+          with that. If a tool helps you write, you should say so. I also saw
+          that they expect you to assign copyright to the journal unless you go
+          the Open Access route. I’d prefer to keep control of my work, but I
+          might consider signing over the rights if the compensation or reach
+          made sense.
+        </p>
+
+        <p>
+          Other publishing options include paying to publish Open Access using a
+          Creative Commons license or posting a preprint on a site like arXiv
+          before formal submission.
+        </p>
+
+        <h2>Plagiarism and Citation</h2>
+        <p>
+          Plagiarism is a problem on campuses, mostly because students aren’t
+          always sure how to cite properly. I feel more confident now, but I
+          still double-check myself, especially since inline citations are new
+          to me. I’ve only used APA format, and it makes sense to me, but the
+          number of rules can still be confusing. I use
+          <em> The Information Literacy User’s Guide </em> and Scribbr to make
+          sure my references and in-text citations are correct. This week, I
+          realized citations are more complex than I thought, especially when
+          I’m writing from memory and need to stop and ask myself whether a
+          sentence is paraphrased or my own thought.
+        </p>
+
+        <h2>Something New I Learned</h2>
+        <p>
+          What stood out to me this week is how easily I can confuse my own
+          voice with someone else’s when paraphrasing. Even if I rewrite
+          something in my own words, it might still come from a source and need
+          a citation. That’s something I’ll be watching closely as I begin
+          writing the actual draft.
+        </p>
+
+        <h2>Selected Images and Citations</h2>
+
+        <h3>Image 1 – Creative Commons Licensed</h3>
+        <img
+          src={commonImage}
+          alt="Creative Commons AI Image"
+          className="blog-image"
+        />
+        <p>
+          mikemacmarketing. (2018, October 5).{" "}
+          <em>Artificial Intelligence & AI & Machine Learning</em> [Image].
+          Wikimedia Commons.
+          <br />
+          <strong>License:</strong> Creative Commons Attribution 2.0 (CC BY 2.0)
+        </p>
+
+        <h3>Image 2 – Standard Licensed</h3>
+        <img
+          src={standardImage}
+          alt="Standard Licensed AI Image"
+          className="blog-image"
+        />
+        <p>
+          Just_Super. (2024, February 12).{" "}
+          <em>
+            AI artificial intelligence Security sentinel password cyber security
+          </em>
+          . iStock.
+          <br />
+          <strong>License:</strong> iStock Standard License (educational and
+          commercial use with attribution)
+        </p>
+      </div>
       {/* Week 4 Post */}
       <div className="blog-entry">
         <h1>Week 4: Visualizing AI and Making Connections</h1>
@@ -253,8 +403,8 @@ export default function Blog() {
             Human-Centered Artificial Intelligence.
           </li>
         </ol>
-      </div>npm run developed
-
+      </div>
+      npm run developed
       {/* Week 3 Post */}
       <div className="blog-entry">
         <h1>Week 3: Full Progress Report and Reflection</h1>
@@ -375,7 +525,6 @@ export default function Blog() {
           and into the drafting phase without delays.
         </p>
       </div>
-
       {/* Week 2 Post */}
       <div className="blog-entry">
         <h1>Week 2: Narrowing the Focus and Asking Better Questions</h1>
@@ -481,7 +630,6 @@ export default function Blog() {
           tech is behind them. That’s my biggest knowledge gap right now.
         </p>
       </div>
-
       {/* Week 1 Post */}
       <div className="blog-entry">
         <h1>Week 1: From Science Fiction to Reality</h1>
@@ -609,7 +757,6 @@ export default function Blog() {
           learned as the project continues.
         </p>
       </div>
-
       {/* Introductory Post */}
       <div className="blog-entry">
         <h1>AI Research Paper</h1>
