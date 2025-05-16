@@ -43,7 +43,7 @@ export default function Blog() {
 
         <h2>MEMORANDUM</h2>
         <p>
-          <strong>TO:</strong> Amelia Garripoli
+          <strong>TO:</strong> Richard Becker
           <br />
           <strong>FROM:</strong> April Sykes
           <br />
