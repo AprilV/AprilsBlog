@@ -1,41 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import googleBadge from "../images/googlebadge.webp";
 import "../Blog.css";
 import commonImage from "../images/CommonStandard/common.jpg";
 import standardImage from "../images/CommonStandard/standard.jpg";
-import "../Blog.css";
+
+function CollapsibleEntry({ title, date, children }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div className="blog-entry">
+      <h1>{title}</h1>
+      <p><strong>Date:</strong> {date}</p>
+      <div className={expanded ? "expanded" : "collapsed"}>
+        {children}
+      </div>
+      <button onClick={() => setExpanded(!expanded)} className="read-more-btn">
+        {expanded ? "Show Less" : "Read More"}
+      </button>
+    </div>
+  );
+}
 
 export default function Blog() {
   return (
     <div className="blog-container">
-      {/* Week 6 Post */}
-      <div className="blog-entry">
-        <h1>Week 6: Realigning the Plan</h1>
+      <CollapsibleEntry title="Week 6: Realigning the Plan" date="May 15, 2025">
         <p>
-          <strong>Date:</strong> May 15, 2025
-        </p>
-
-        <p>
-          This week’s journal entry includes a briefing memo that summarizes my
-          research progress so far. I’m behind on the original timeline but not
-          off track. I’ve completed the Introduction and History sections. I
+          This week's journal entry includes a briefing memo that summarizes my
+          research progress so far. I'm behind on the original timeline but not
+          off track. I've completed the Introduction and History sections. I
           expected to be working on the Technical Specifics section by now, but
           other responsibilities pulled me away from the project more than I
-          planned. I’ve still made good use of the time I did have.
+          planned. I've still made good use of the time I did have.
         </p>
 
         <p>
           I focused on organizing source material, refining the literature
           matrix, and identifying where I need stronger support in the Technical
-          Specifics section. I’ve also started planning for the final
-          presentation and decided to use Prezi. It’s a better fit for the way I
-          want to walk through AI’s evolution visually, especially since I’ll be
+          Specifics section. I've also started planning for the final
+          presentation and decided to use Prezi. It's a better fit for the way I
+          want to walk through AI's evolution visually, especially since I'll be
           showing how it moved from science fiction to real-world
           infrastructure.
         </p>
 
         <p>
-          Next week is about regaining momentum. I’ll finish the Technical
+          Next week is about regaining momentum. I'll finish the Technical
           Specifics section, finalize sources, and outline the next two
           sections: Concerns and Privacy. I hope to have a full draft by the end
           of the week.
@@ -59,22 +69,22 @@ export default function Blog() {
           into real-world technology shaping infrastructure, labor,
           communication, and national security. This project explores how that
           shift occurred and what the implications are for society. It traces
-          AI’s evolution from early theories through today’s neural
+          AI's evolution from early theories through today's neural
           network-driven systems.
         </p>
 
         <h3>Study Methods, Limitations, and Literature Summary</h3>
         <p>
           This is a literature-based research project. I am reviewing academic
-          articles, white papers, technical blogs, and books to map AI’s
+          articles, white papers, technical blogs, and books to map AI's
           development. I originally planned to be done with the Technical
-          Specifics section this week, but that didn’t happen. I’ve written the
+          Specifics section this week, but that didn't happen. I've written the
           Introduction and History sections and adjusted my timeline
           accordingly.
         </p>
 
         <p>
-          I’m using a minimum of two credible sources per section, with inline
+          I'm using a minimum of two credible sources per section, with inline
           APA citations. The audience includes a professor and six junior
           students in the BASIS program. My tone stays clear and semi-technical,
           with minimal jargon and full source transparency.
@@ -99,7 +109,7 @@ export default function Blog() {
           <li>
             <strong>Google AI (2023).</strong>{" "}
             <em>Machine Learning Crash Course.</em> This resource explains
-            supervised, unsupervised, and deep learning in clear terms. I’m
+            supervised, unsupervised, and deep learning in clear terms. I'm
             using it to support the Technical Specifics section and explain what
             LLMs like GPT actually do.
           </li>
@@ -114,7 +124,7 @@ export default function Blog() {
         <h3>Findings So Far</h3>
         <ul>
           <li>
-            AI’s history is shaped by both science fiction and actual computing
+            AI's history is shaped by both science fiction and actual computing
             limits.
           </li>
           <li>
@@ -138,56 +148,51 @@ export default function Blog() {
         <h3>Next Steps</h3>
         <p>
           I will complete the Technical Specifics section and get a clean
-          outline in place for Concerns and Privacy. I’m still using the same
+          outline in place for Concerns and Privacy. I'm still using the same
           citation approach and structure from Week 3. I also plan to finalize
           my choice of a visual element. Prezi will be used for the final
           presentation. I hope to have a full working draft by the end of next
           week.
         </p>
-      </div>
-      {/* Week 5 Post */}
-      <div className="blog-entry">
-        <h1>Week 5: Midpoint Check-In and Reflection</h1>
-        <p>
-          <strong>Date:</strong> May 8, 2025
-        </p>
+      </CollapsibleEntry>
 
+      <CollapsibleEntry title="Week 5: Midpoint Check-In and Reflection" date="May 8, 2025">
         <p>
           According to the plan I set back in Week 3, I expected to have my
           reading done, sources finalized, and the first few sections of my
-          draft underway by now. I’m not there yet. I’ve had to spend extra time
+          draft underway by now. I'm not there yet. I've had to spend extra time
           this week replacing sources that either turned out to be incomplete,
           no longer credible, or unavailable. One of the key articles I planned
-          to use, the MIT piece on science fiction and AI, disappeared, so I’m
+          to use, the MIT piece on science fiction and AI, disappeared, so I'm
           heading back to the library to find a suitable replacement.
         </p>
 
         <p>
           This week, I focused on evaluating what I had, identifying what still
-          works, and removing anything that didn’t meet academic standards. I
+          works, and removing anything that didn't meet academic standards. I
           confirmed the licenses and citations for my two project images, one
-          from Wikimedia Commons and one from iStock. I didn’t get as far on
+          from Wikimedia Commons and one from iStock. I didn't get as far on
           drafting as I hoped because I was also working on a coding project for
           another class, but I made progress in cleaning up my research base. I
-          may need to scale back parts of my outline if I can’t stay within the
+          may need to scale back parts of my outline if I can't stay within the
           scope of the assignment.
         </p>
 
         <p>
-          Next week, I’ll go to the library to find replacement sources, finish
-          my reading, and start writing the “History of AI” section. I’ll also
-          make sure to double-check citations while I draft so I don’t miss
+          Next week, I'll go to the library to find replacement sources, finish
+          my reading, and start writing the "History of AI" section. I'll also
+          make sure to double-check citations while I draft so I don't miss
           anything or end up paraphrasing without attribution.
         </p>
 
         <h2>How My Sources Relate and Fill Gaps</h2>
         <p>
-          So far, my sources haven’t directly contradicted each other, but they
+          So far, my sources haven't directly contradicted each other, but they
           offer very different perspectives on the future of AI. Some are
-          optimistic, others are alarmist. There’s disagreement about whether AI
+          optimistic, others are alarmist. There's disagreement about whether AI
           will destroy jobs, save industries, or threaten humanity. I find the
           extreme views more hypothetical than realistic. Most of it sounds like
-          fear based on a poor understanding of what AI actually is. I’ve been
+          fear based on a poor understanding of what AI actually is. I've been
           more focused on identifying credible, well-supported material. For
           example,
           <em> The Coming Wave </em> is helping me understand political and
@@ -198,14 +203,14 @@ export default function Blog() {
         <h2>Ethical Guidelines and Publishing Reflection</h2>
         <p>
           I reviewed the author guidelines for the{" "}
-          <em>Information Systems Journal</em>. The ethical rules didn’t
+          <em>Information Systems Journal</em>. The ethical rules didn't
           surprise me, but I did find it interesting how they addressed AI
           tools. In past classes, there was no discussion about ChatGPT or AI
           editing, but this journal requires authors to disclose any use of
           tools like that in the methods or acknowledgments section. I agree
           with that. If a tool helps you write, you should say so. I also saw
           that they expect you to assign copyright to the journal unless you go
-          the Open Access route. I’d prefer to keep control of my work, but I
+          the Open Access route. I'd prefer to keep control of my work, but I
           might consider signing over the rights if the compensation or reach
           made sense.
         </p>
@@ -218,24 +223,24 @@ export default function Blog() {
 
         <h2>Plagiarism and Citation</h2>
         <p>
-          Plagiarism is a problem on campuses, mostly because students aren’t
+          Plagiarism is a problem on campuses, mostly because students aren't
           always sure how to cite properly. I feel more confident now, but I
           still double-check myself, especially since inline citations are new
-          to me. I’ve only used APA format, and it makes sense to me, but the
+          to me. I've only used APA format, and it makes sense to me, but the
           number of rules can still be confusing. I use
-          <em> The Information Literacy User’s Guide </em> and Scribbr to make
+          <em> The Information Literacy User's Guide </em> and Scribbr to make
           sure my references and in-text citations are correct. This week, I
           realized citations are more complex than I thought, especially when
-          I’m writing from memory and need to stop and ask myself whether a
+          I'm writing from memory and need to stop and ask myself whether a
           sentence is paraphrased or my own thought.
         </p>
 
         <h2>Something New I Learned</h2>
         <p>
           What stood out to me this week is how easily I can confuse my own
-          voice with someone else’s when paraphrasing. Even if I rewrite
+          voice with someone else's when paraphrasing. Even if I rewrite
           something in my own words, it might still come from a source and need
-          a citation. That’s something I’ll be watching closely as I begin
+          a citation. That's something I'll be watching closely as I begin
           writing the actual draft.
         </p>
 
@@ -271,29 +276,24 @@ export default function Blog() {
           <strong>License:</strong> iStock Standard License (educational and
           commercial use with attribution)
         </p>
-      </div>
-      {/* Week 4 Post */}
-      <div className="blog-entry">
-        <h1>Week 4: Visualizing AI and Making Connections</h1>
-        <p>
-          <strong>Date:</strong> May 1, 2025
-        </p>
+      </CollapsibleEntry>
 
+      <CollapsibleEntry title="Week 4: Visualizing AI and Making Connections" date="May 1, 2025">
         <p>
-          This week I created a mind map to organize everything I’ve researched
+          This week I created a mind map to organize everything I've researched
           so far. I already had an outline, but building the mind map gave me a
           different perspective. Visually mapping the pieces helped me see the
           relationships between technical development, real-world use, ethical
           concerns, and regulation in a way that a list of bullet points
-          doesn’t. It also helped me track what connects and where my strongest
-          evidence sits. I didn’t expect the environmental impact of AI to tie
+          doesn't. It also helped me track what connects and where my strongest
+          evidence sits. I didn't expect the environmental impact of AI to tie
           so directly into policy concerns, but it showed up across multiple
-          categories. That connection was something I hadn’t clearly seen
+          categories. That connection was something I hadn't clearly seen
           before.
         </p>
 
         <p>
-          <strong>Here’s the mind map I created:</strong>
+          <strong>Here's the mind map I created:</strong>
           <br />
           <a
             href="https://atlas.mindmup.com/2025/05/9d69bb4026df11f0a04e9b9ed19cec8c/ai_from_science_fiction_to_reality/index.html"
@@ -306,9 +306,9 @@ export default function Blog() {
 
         <p>
           Looking back at my Week 3 plan, I said I needed to solidify the
-          structure of my paper and make better use of the sources I’ve
-          collected. I’ve done that. The map now mirrors the major sections in
-          my outline, and I’m tagging which sources go where. So yes, I’m where
+          structure of my paper and make better use of the sources I've
+          collected. I've done that. The map now mirrors the major sections in
+          my outline, and I'm tagging which sources go where. So yes, I'm where
           I planned to be.
         </p>
 
@@ -316,10 +316,10 @@ export default function Blog() {
           I used a mix of news articles, corporate blogs, expert blogs, industry
           reports, academic papers, and books. Each had strengths and limits.
           News articles helped track current events but lacked depth. Corporate
-          blogs like Google’s were technically useful but biased toward
+          blogs like Google's were technically useful but biased toward
           promoting their tools. Expert blogs like The Gradient offered context
           and analysis that helped frame key ideas. Industry reports like
-          McKinsey’s explained adoption and business impact clearly. Scholarly
+          McKinsey's explained adoption and business impact clearly. Scholarly
           reports from Stanford added credibility and evidence. The book by
           Suleyman was the most useful for thinking about the future and ethics.
         </p>
@@ -350,25 +350,25 @@ export default function Blog() {
 
         <p>
           One ethical concern that came up was how AI companies frame their own
-          tools. For example, Google’s blog makes their models sound flawless
+          tools. For example, Google's blog makes their models sound flawless
           but skips over concerns like energy use or bias. I had to check claims
-          across multiple sources to get the full picture. There’s also a
+          across multiple sources to get the full picture. There's also a
           question of how much trust to place in AI-generated content or
-          summaries. I’ve stayed focused on sources written or reviewed by
+          summaries. I've stayed focused on sources written or reviewed by
           humans.
         </p>
 
         <p>
           This week I also finished reviewing the Stanford HAI report and added
           the McKinsey explainer to cover real-world adoption of generative AI.
-          I didn’t expect to find myself so interested in policy, but after
-          reading more on containment, it’s clear that regulation is one of the
+          I didn't expect to find myself so interested in policy, but after
+          reading more on containment, it's clear that regulation is one of the
           most urgent pieces of this story.
         </p>
 
         <p>
           Next week I plan to start drafting the first full section of my paper.
-          The mind map will act like a blueprint. I’ll continue tagging my
+          The mind map will act like a blueprint. I'll continue tagging my
           sources by topic and look for one more academic article to back up the
           historical section. I also want to do a deeper dive into bias and
           fairness in AI.
@@ -379,7 +379,7 @@ export default function Blog() {
           <li>
             Suleyman, M., &amp; Bhaskar, M. (2023).{" "}
             <em>
-              The Coming Wave: Technology, Power, and the Twenty-First Century’s
+              The Coming Wave: Technology, Power, and the Twenty-First Century's
               Greatest Dilemma
             </em>
             . Crown.
@@ -394,7 +394,7 @@ export default function Blog() {
             Blog.
           </li>
           <li>
-            Bommasani, R. (2022). <em>NLP’s ImageNet Moment Has Arrived</em>.
+            Bommasani, R. (2022). <em>NLP's ImageNet Moment Has Arrived</em>.
             The Gradient.
           </li>
           <li>
@@ -403,15 +403,9 @@ export default function Blog() {
             Human-Centered Artificial Intelligence.
           </li>
         </ol>
-      </div>
-      npm run developed
-      {/* Week 3 Post */}
-      <div className="blog-entry">
-        <h1>Week 3: Full Progress Report and Reflection</h1>
-        <p>
-          <strong>Date:</strong> April 24, 2025
-        </p>
+      </CollapsibleEntry>
 
+      <CollapsibleEntry title="Week 3: Full Progress Report and Reflection" date="April 24, 2025">
         <p>
           This week I focused on getting organized and laying the foundation for
           my entire project. I worked with a librarian to finalize a WBS-style
@@ -420,7 +414,7 @@ export default function Blog() {
           regulation, and more. This outline now drives my research and my
           timeline. I also created a literature matrix to categorize and track
           all my sources, and completed a full KWHL chart to reflect what I knew
-          coming in and what I’ve learned so far.
+          coming in and what I've learned so far.
         </p>
 
         <p>
@@ -441,7 +435,7 @@ export default function Blog() {
           <li>Coal plants are being reactivated to meet power needs</li>
           <li>Toxins are kept secret under corporate protection</li>
           <li>
-            Projects like Microsoft’s Firecracker and Project Sassy were
+            Projects like Microsoft's Firecracker and Project Sassy were
             discussed
           </li>
           <li>There is increased air, noise, and light pollution</li>
@@ -465,20 +459,20 @@ export default function Blog() {
         </p>
 
         <p>
-          I’m ahead of schedule. My plan is to complete source review by the end
+          I'm ahead of schedule. My plan is to complete source review by the end
           of Week 4, evaluate and annotate in Week 5, begin drafting in Weeks
           6–7, and complete my full draft in Week 8. Week 9 is reserved for
           revisions and preparing for final submission and presentation. So far,
-          I’ve done more than expected. I’ve finalized my outline, attended the
-          seminar, created tracking tools, and started evaluating what I’ll
+          I've done more than expected. I've finalized my outline, attended the
+          seminar, created tracking tools, and started evaluating what I'll
           include in the paper.
         </p>
 
         <p>
           The topic came from personal interest. I grew up watching AI in
-          science fiction. Now that it’s becoming real, it made sense to ask
-          what that means for society. It’s not just about technology, it’s
-          about how fast it’s changing our world. Reading{" "}
+          science fiction. Now that it's becoming real, it made sense to ask
+          what that means for society. It's not just about technology, it's
+          about how fast it's changing our world. Reading{" "}
           <em>The Coming Wave</em> helped focus my attention on containment and
           long-term risks. The hardest part of picking a topic was narrowing it
           down. AI is a huge field. I had to choose one central story. I decided
@@ -493,9 +487,9 @@ export default function Blog() {
           <li>
             <em>The Coming Wave</em> by Mustafa Suleyman
           </li>
-          <li>Stanford HAI’s AI policy reports</li>
+          <li>Stanford HAI's AI policy reports</li>
           <li>McKinsey and Deloitte research on enterprise AI use</li>
-          <li>Google’s AI blog and Gemini documentation</li>
+          <li>Google's AI blog and Gemini documentation</li>
           <li>JSTOR reviews and articles from credible journals</li>
           <li>Google AI intro course and Qwiklabs hands-on training</li>
         </ul>
@@ -510,28 +504,23 @@ export default function Blog() {
         </ul>
 
         <p>
-          Looking back, I would’ve benefited from starting my literature matrix
-          earlier and applying stricter filtering upfront. That would’ve saved
-          time by avoiding weak sources. I also didn’t plan on how useful the
+          Looking back, I would've benefited from starting my literature matrix
+          earlier and applying stricter filtering upfront. That would've saved
+          time by avoiding weak sources. I also didn't plan on how useful the
           KWHL chart would be until I did it. It helped organize what I knew and
           gave direction to what I still needed to learn.
         </p>
 
         <p>
-          Next week, I’ll go through all my gathered sources and finalize which
-          ones make it into the draft. I’ll begin reading and annotating key
+          Next week, I'll go through all my gathered sources and finalize which
+          ones make it into the draft. I'll begin reading and annotating key
           materials and start forming thoughts about writing sections of the
           paper based on my outline. This process should carry me through Week 5
           and into the drafting phase without delays.
         </p>
-      </div>
-      {/* Week 2 Post */}
-      <div className="blog-entry">
-        <h1>Week 2: Narrowing the Focus and Asking Better Questions</h1>
-        <p>
-          <strong>Date:</strong> April 17, 2025
-        </p>
+      </CollapsibleEntry>
 
+      <CollapsibleEntry title="Week 2: Narrowing the Focus and Asking Better Questions" date="April 17, 2025">
         <p>
           My research question is now fully formed:{" "}
           <em>
@@ -545,8 +534,8 @@ export default function Blog() {
         </p>
 
         <p>
-          This week I made good progress. I completed Google’s Introduction to
-          AI course and earned a badge, which I’ve added to this blog below:
+          This week I made good progress. I completed Google's Introduction to
+          AI course and earned a badge, which I've added to this blog below:
         </p>
 
         <img
@@ -556,20 +545,20 @@ export default function Blog() {
         />
 
         <p>
-          I’ve been reading <em>The Coming Wave</em> by Mustafa Suleyman, which
+          I've been reading <em>The Coming Wave</em> by Mustafa Suleyman, which
           is helping me understand how major technological shifts shape the
-          world. I also pulled sources from JSTOR, Stanford, and Google’s AI
-          research pages. I’ve started a list of useful articles and am
+          world. I also pulled sources from JSTOR, Stanford, and Google's AI
+          research pages. I've started a list of useful articles and am
           beginning to decide which ones are strong enough to cite. I feel
           slightly ahead, but I need to slow down and start reading more deeply
           rather than collecting too much.
         </p>
 
         <p>
-          The biggest issue I’ve run into is how much material I’ve gathered.
-          It’s more than I can reasonably include in a 12 to 15 page paper. I’m
+          The biggest issue I've run into is how much material I've gathered.
+          It's more than I can reasonably include in a 12 to 15 page paper. I'm
           starting to organize and filter the sources. My plan is to keep the
-          strongest ones and remove anything that doesn’t directly support the
+          strongest ones and remove anything that doesn't directly support the
           research question.
         </p>
 
@@ -583,59 +572,55 @@ export default function Blog() {
         </ul>
 
         <p>
-          As I’ve been working, I’ve come across new terms and tools. Vertex AI
+          As I've been working, I've come across new terms and tools. Vertex AI
           Studio showed up in one of the articles, and I learned about
           information containment, the idea that powerful technologies can be
           mitigated but never fully controlled. Suleyman makes strong points by
           comparing AI to earlier turning points in history like the Gutenberg
           press or the Model T. One quote stuck with me:{" "}
           <em>
-            “Our species is not wired to truly grapple with transformation on
-            this scale.”
+            "Our species is not wired to truly grapple with transformation on
+            this scale."
           </em>{" "}
           That reminded me of how unprepared we often are when new systems
           emerge faster than we can adapt.
         </p>
 
-        <p>I’ve started grouping sources into categories:</p>
+        <p>I've started grouping sources into categories:</p>
         <ul>
           <li>Academic research: JSTOR, peer-reviewed journals</li>
           <li>Corporate technical: Google AI blog, Gemini documentation</li>
-          <li>Expert opinion: Suleyman’s book, Stanford HAI pieces</li>
-          <li>Educational: Google’s AI course, 365 Data Science</li>
+          <li>Expert opinion: Suleyman's book, Stanford HAI pieces</li>
+          <li>Educational: Google's AI course, 365 Data Science</li>
           <li>Media: Wired, McKinsey, and NYT Tech coverage</li>
         </ul>
 
         <p>
-          My main keywords have been “artificial intelligence,” “evolution of
-          AI,” “science fiction and AI,” and “M5 Unit Star Trek.” These helped
+          My main keywords have been "artificial intelligence," "evolution of
+          AI," "science fiction and AI," and "M5 Unit Star Trek." These helped
           me find both technical and cultural references. Along the way, I had
           to look up terms like NPU (neural processing unit), DeepMind,
-          pessimism aversion trap, and misinformation apocalypse. They’re
+          pessimism aversion trap, and misinformation apocalypse. They're
           helping me understand the risks and future directions of AI.
         </p>
 
         <p>
-          Some things I already knew without researching: I’ve worked with
+          Some things I already knew without researching: I've worked with
           ChatGPT, Bard, Genesis, Copilot, and deepseek. I somewhat know how
           they behave and how to get the best out of them. I know{" "}
           <em>Star Trek</em> like the back of my hand, so I remembered the M5
           Unit and Dr. Daystrom immediately. I also already knew about Deep Blue
           beating Garry Kasparov in 1997. That moment told the world that AI
-          wasn’t just a theory, it could compete with us.
+          wasn't just a theory, it could compete with us.
         </p>
 
         <p>
-          I still don’t fully understand how neural networks are created or what
-          tech is behind them. That’s my biggest knowledge gap right now.
+          I still don't fully understand how neural networks are created or what
+          tech is behind them. That's my biggest knowledge gap right now.
         </p>
-      </div>
-      {/* Week 1 Post */}
-      <div className="blog-entry">
-        <h1>Week 1: From Science Fiction to Reality</h1>
-        <p>
-          <strong>Date:</strong> April 10, 2025
-        </p>
+      </CollapsibleEntry>
+
+      <CollapsibleEntry title="Week 1: From Science Fiction to Reality" date="April 10, 2025">
         <p>
           This week I started digging into the foundations of artificial
           intelligence to get a better understanding of where the field started,
@@ -643,14 +628,14 @@ export default function Blog() {
           helpful videos that gave me a solid overview:
         </p>
         <ul>
-          <li>Google’s AI for Beginners</li>
+          <li>Google's AI for Beginners</li>
           <li>A Brief History of AI</li>
           <li>Artificial Intelligence Explained</li>
         </ul>
         <p>
           One of the main things I learned is that machine learning is a subset
           of AI. There are different types of models depending on the task.
-          Here’s a breakdown of the main types I explored:
+          Here's a breakdown of the main types I explored:
         </p>
         <ul>
           <li>
@@ -665,7 +650,7 @@ export default function Blog() {
           </li>
           <li>
             <strong>Semi-supervised learning:</strong> Combines a small amount
-            of labeled data with a large amount of unlabeled data. It’s used
+            of labeled data with a large amount of unlabeled data. It's used
             when labeling every data point is too time-consuming or expensive.
           </li>
           <li>
@@ -688,7 +673,7 @@ export default function Blog() {
           Deep learning takes things further by using artificial neural networks
           modeled after how the brain works. These systems have layers of
           virtual neurons that pass data forward and adjust based on what they
-          learn. In <em>Star Trek: Voyager</em>, they referred to the ship’s
+          learn. In <em>Star Trek: Voyager</em>, they referred to the ship's
           computer as a neural net, which feels surprisingly close to how modern
           deep learning systems work today.
         </p>
@@ -698,7 +683,7 @@ export default function Blog() {
           , <em>2001: A Space Odyssey</em>, and <em>The Terminator</em> are just
           a few of the examples that really stuck with me. They all showed
           different possibilities for AI. In <em>The Next Generation</em>, Data
-          was an android who was intelligent and precise but didn’t understand
+          was an android who was intelligent and precise but didn't understand
           emotion. Later, when he got an emotion chip, he struggled to make
           sense of feelings and humor. HAL 9000 in <em>2001</em> was calm and
           logical until he turned on the humans. In <em>The Terminator</em>, AI
@@ -713,8 +698,8 @@ export default function Blog() {
           me to something else I learned this week: LLMs, or large language
           models. These models are trained on massive datasets and are designed
           to understand and generate language. ChatGPT is an example of an LLM.
-          It’s part of a larger area called generative AI, which takes input and
-          turns it into something new, whether that’s a spreadsheet, an article,
+          It's part of a larger area called generative AI, which takes input and
+          turns it into something new, whether that's a spreadsheet, an article,
           or even a video.
         </p>
         <p>Some key moments from the history of AI stood out to me:</p>
@@ -730,7 +715,7 @@ export default function Blog() {
             1960s–1970s: The AI Winter slowed research due to lack of funding
             and progress
           </li>
-          <li>1997: IBM’s Deep Blue beat chess champion Garry Kasparov</li>
+          <li>1997: IBM's Deep Blue beat chess champion Garry Kasparov</li>
           <li>
             2006: Geoffrey Hinton published research that revived interest in
             deep learning
@@ -746,47 +731,43 @@ export default function Blog() {
         </ul>
         <p>
           I also found a new resource called <strong>365 Data Science</strong>{" "}
-          that offers tutorials and lessons on AI and machine learning. I’ll be
+          that offers tutorials and lessons on AI and machine learning. I'll be
           using it throughout this project since it breaks concepts down clearly
-          and builds on what I’m already learning.
+          and builds on what I'm already learning.
         </p>
         <p>
           This week gave me a solid starting point. It helped me understand what
           AI really is, how it connects to science fiction, and how fast it's
-          moving in the real world. I’m looking forward to building on what I’ve
+          moving in the real world. I'm looking forward to building on what I've
           learned as the project continues.
         </p>
-      </div>
-      {/* Introductory Post */}
-      <div className="blog-entry">
-        <h1>AI Research Paper</h1>
+      </CollapsibleEntry>
+
+      <CollapsibleEntry title="AI Research Paper" date="April 7, 2025">
         <p>
-          <strong>Date:</strong> April 7, 2025
-        </p>
-        <p>
-          Hello, my name is <strong>April V. Sykes</strong>. I’m currently
+          Hello, my name is <strong>April V. Sykes</strong>. I'm currently
           taking <strong>IS390 IS Reading and Research</strong>, and this blog
           is part of my coursework.
         </p>
         <p>
-          I’m interested in how technology evolves and how ideas that once
-          seemed like science fiction eventually become reality. That’s why I
+          I'm interested in how technology evolves and how ideas that once
+          seemed like science fiction eventually become reality. That's why I
           chose to research{" "}
           <em>
-            “The Evolution of Artificial Intelligence: From Science Fiction to
-            Reality.”
+            "The Evolution of Artificial Intelligence: From Science Fiction to
+            Reality."
           </em>
         </p>
         <p>
-          This blog will follow my 10-week research process. I’ll be using it to
+          This blog will follow my 10-week research process. I'll be using it to
           document my thoughts, research progress, and personal reflections as I
           explore how AI has developed over time and where it might be going.
         </p>
         <p>
-          By the end, this will serve as a record of what I’ve learned and how
+          By the end, this will serve as a record of what I've learned and how
           my thinking has grown throughout the project.
         </p>
-      </div>
+      </CollapsibleEntry>
     </div>
   );
 }
