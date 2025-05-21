@@ -10,10 +10,10 @@ function CollapsibleEntry({ title, date, children }) {
   return (
     <div className="blog-entry">
       <h1>{title}</h1>
-      <p><strong>Date:</strong> {date}</p>
-      <div className={expanded ? "expanded" : "collapsed"}>
-        {children}
-      </div>
+      <p>
+        <strong>Date:</strong> {date}
+      </p>
+      <div className={expanded ? "expanded" : "collapsed"}>{children}</div>
       <button onClick={() => setExpanded(!expanded)} className="read-more-btn">
         {expanded ? "Show Less" : "Read More"}
       </button>
@@ -24,6 +24,76 @@ function CollapsibleEntry({ title, date, children }) {
 export default function Blog() {
   return (
     <div className="blog-container">
+      <CollapsibleEntry
+        title="Week 7: Reflection and Research Progress"
+        date="May 20, 2025"
+      >
+        <p>
+          This week I reflected on the role of collaboration in my academic and
+          professional experience. One example that stands out comes from my
+          time as a team lead for Dell Infrastructure Services. During daylight
+          saving time changes, I had to work closely with systems programmers,
+          interface support teams, and operations technicians across multiple
+          time zones including India, Kentucky, and Ohio. We coordinated
+          scheduled downtimes and made sure systems came back up aligned with
+          the correct regional time shifts. These changes required planning,
+          approvals, and live coordination to execute cleanly.
+        </p>
+        <p>
+          According to the modified plan I created in Week 6, I should be deep
+          into my draft and close to completing it. I am nearly there. I've
+          identified all of my sources with only a few loose ends, and I’ve
+          cleared my schedule to focus solely on this project. I expect to be
+          over halfway done with the writing by the end of the week.
+        </p>
+        <p>
+          The main issue I encountered was time. I thought I would already be
+          finished with the draft, but the writing process is taking longer than
+          I expected. That said, I am not behind in the course. I’m only behind
+          on my personal timeline, which was more aggressive. Since I’ve built
+          in time and prioritized this project, there’s no concern about missing
+          any deadlines.
+        </p>
+        <p>
+          This week, I finalized my complete list of sources, properly formatted
+          my reference list, and completed about one-third of my draft. Inline
+          citations have taken more time than expected since this is the first
+          research paper where I’ve been required to use them, even though I’ve
+          used APA format before.
+        </p>
+        <p>
+          Next week I plan to complete the full draft and meet with a librarian
+          for a review before submitting for peer feedback. I’ve also started
+          thinking about how I will present my research visually. My idea is to
+          design a creative, mostly visual presentation that distills the core
+          of my findings without relying heavily on slides full of text.
+        </p>
+        <p>
+          Looking back on my early assumptions, I initially thought AI was more
+          advanced and closer to free-thinking. I assumed it operated more like
+          a mind. Now I understand that AI today, especially for public use, is
+          built on large language models. These models can generate unique
+          responses but they are not actually “thinking.” That shift in
+          understanding changed how I frame my research question and shaped the
+          tone of my writing.
+        </p>
+        <p>
+          Several key facts have shown up across multiple sources. The history
+          of AI was included in almost every article I read. The concept of LLMs
+          and how they work also appeared repeatedly. The distinction between AI
+          and machine learning came up in various formats as well. This
+          repetition across sources confirmed that my foundational facts are
+          reliable and consistent.
+        </p>
+        <p>
+          I haven’t practiced my summary out loud to another person, but I do
+          talk through the material to myself. That process has helped me check
+          my understanding and made me more confident in how I explain the
+          research. It also revealed that I can follow my own logic from one
+          section to the next, which tells me that the work is coming together.
+        </p>
+      </CollapsibleEntry>
+
       <CollapsibleEntry title="Week 6: Realigning the Plan" date="May 15, 2025">
         <p>
           This week's journal entry includes a briefing memo that summarizes my
@@ -156,7 +226,10 @@ export default function Blog() {
         </p>
       </CollapsibleEntry>
 
-      <CollapsibleEntry title="Week 5: Midpoint Check-In and Reflection" date="May 8, 2025">
+      <CollapsibleEntry
+        title="Week 5: Midpoint Check-In and Reflection"
+        date="May 8, 2025"
+      >
         <p>
           According to the plan I set back in Week 3, I expected to have my
           reading done, sources finalized, and the first few sections of my
@@ -278,7 +351,10 @@ export default function Blog() {
         </p>
       </CollapsibleEntry>
 
-      <CollapsibleEntry title="Week 4: Visualizing AI and Making Connections" date="May 1, 2025">
+      <CollapsibleEntry
+        title="Week 4: Visualizing AI and Making Connections"
+        date="May 1, 2025"
+      >
         <p>
           This week I created a mind map to organize everything I've researched
           so far. I already had an outline, but building the mind map gave me a
@@ -405,7 +481,10 @@ export default function Blog() {
         </ol>
       </CollapsibleEntry>
 
-      <CollapsibleEntry title="Week 3: Full Progress Report and Reflection" date="April 24, 2025">
+      <CollapsibleEntry
+        title="Week 3: Full Progress Report and Reflection"
+        date="April 24, 2025"
+      >
         <p>
           This week I focused on getting organized and laying the foundation for
           my entire project. I worked with a librarian to finalize a WBS-style
@@ -520,7 +599,10 @@ export default function Blog() {
         </p>
       </CollapsibleEntry>
 
-      <CollapsibleEntry title="Week 2: Narrowing the Focus and Asking Better Questions" date="April 17, 2025">
+      <CollapsibleEntry
+        title="Week 2: Narrowing the Focus and Asking Better Questions"
+        date="April 17, 2025"
+      >
         <p>
           My research question is now fully formed:{" "}
           <em>
@@ -620,7 +702,10 @@ export default function Blog() {
         </p>
       </CollapsibleEntry>
 
-      <CollapsibleEntry title="Week 1: From Science Fiction to Reality" date="April 10, 2025">
+      <CollapsibleEntry
+        title="Week 1: From Science Fiction to Reality"
+        date="April 10, 2025"
+      >
         <p>
           This week I started digging into the foundations of artificial
           intelligence to get a better understanding of where the field started,
