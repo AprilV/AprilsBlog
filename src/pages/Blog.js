@@ -25,6 +25,60 @@ export default function Blog() {
   return (
     <div className="blog-container">
       <CollapsibleEntry
+        title="Week 8: Final Reflection and Research Discoveries"
+        date="May 29, 2025"
+      >
+        <p>
+          Based on my Week 6 plan, I should be wrapping up the final draft and
+          starting work on the presentation. I am on track. The draft is 95
+          percent done. What is left is proofreading, finalizing the resource
+          list and Appendix A, confirming all citations, and deciding if I will
+          add one more graphic.
+        </p>
+
+        <p>
+          One issue was verifying sources. I had to go back through every
+          citation and make sure it matched the right reference. I also had to
+          separate what was actually used from what should be moved to Appendix
+          A. It took longer than I expected but the source list is now accurate.
+        </p>
+
+        <p>
+          This week I finished the writing, cleaned up the structure, checked
+          each section against the outline, and removed anything off-topic. I
+          formatted citations, organized visuals, and built the appendix. This
+          matched what I planned. The only part that took more time was the
+          citation review.
+        </p>
+
+        <p>
+          Next week I will proofread the full paper, finalize the reference list
+          and appendix, confirm image captions and licensing, and begin
+          preparing for the presentation. That part will take the next two
+          weeks.
+        </p>
+
+        <p>
+          While writing, I saw that a lot of the major breakthroughs happened in
+          a short window. Deep learning, model scaling, and hardware
+          improvements took off after 2012. I expected steady growth, but the
+          timeline showed a faster pace. I also noticed that legal, ethical, and
+          technical issues are usually covered separately, but looking at
+          different sources together showed how those areas overlap. The gaps in
+          regulation and accountability were easier to see when the topics were
+          combined.
+        </p>
+
+        <p>
+          I did not expect the environmental impact to be so well-documented.
+          Research from the OC seminar, JSTOR, and other sources showed how much
+          energy and water large models use. I only touched on this in the
+          paper. It could be a separate research topic by itself, but it was not
+          the main focus of my project.
+        </p>
+      </CollapsibleEntry>
+
+      <CollapsibleEntry
         title="Week 7: Reflection and Research Progress"
         date="May 20, 2025"
       >
