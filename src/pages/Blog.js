@@ -25,6 +25,53 @@ export default function Blog() {
   return (
     <div className="blog-container">
       <CollapsibleEntry
+        title="Week 9: Research, Decisions, and the Final Push"
+        date="June 5, 2025"
+      >
+        <p>
+          By Week 9, I planned to have both my research paper and presentation
+          nearly complete, and I’ve stuck to that schedule. The research paper
+          draft is finished and only needs a few minor edits before I submit it
+          as an optional draft on Sunday, June 8. The presentation is also
+          almost done, with visuals, voiceovers, and structure in place. Most of
+          this week was spent reviewing, polishing, and resolving tech issues
+          with Canva and file formatting. I ended up making more progress than
+          expected, even with those extra steps.
+        </p>
+        <p>
+          Next week, I’ll:
+          <ul>
+            <li>Submit the final paper by the June 14 deadline</li>
+            <li>Complete the peer review assignment</li>
+            <li>
+              Rehearse my June 18 presentation to tighten timing and delivery
+            </li>
+          </ul>
+        </p>
+        <p>
+          Looking back at the bigger picture, this project reinforced why
+          research matters in decision-making. Seat-of-the-pants decisions might
+          work occasionally, but research reduces risk and provides facts that
+          managers need to act. Managers are paid to make decisions, but
+          researchers help them make better ones. A strategy is only as strong
+          as the data behind it. The purpose of research is to solve real
+          problems, not just to gather data. Technology has made research faster
+          and more powerful, while internationalization has added complexity
+          across languages, markets, and regulations. Collaboration has helped
+          manage that complexity. The benefits include:
+          <ul>
+            <li>More perspectives and ideas</li>
+            <li>Shared workload and responsibilities</li>
+            <li>Stronger final results</li>
+          </ul>
+          But it also comes with challenges like communication issues, tech
+          slowdowns, and aligning everyone's input. This week felt like the
+          turning point, and I’m confident the final results will show how much
+          work went into getting it all right.
+        </p>
+      </CollapsibleEntry>
+
+      <CollapsibleEntry
         title="Week 8: Final Reflection and Research Discoveries"
         date="May 29, 2025"
       >
